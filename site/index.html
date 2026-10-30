@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratyush Mohanty — Academic & Research Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOP HEADER ===== -->
+  <header class="header">
+    <div class="header-name">Pratyush <span>Mohanty</span></div>
+
+    <nav class="header-nav" id="desktop-nav">
+      <a class="nav-link" data-route="home">Home</a>
+      <a class="nav-link" data-route="education">Education</a>
+      <a class="nav-link" data-route="experience">Experience</a>
+      <a class="nav-link" data-route="projects">Projects</a>
+      <a class="nav-link" data-route="extracurriculars">Extracurriculars</a>
+      <a class="nav-link" data-route="hobbies">Hobbies</a>
+      <a class="nav-link" data-route="contact">Contact</a>
+      <a class="nav-link nav-cv-link" href="assets/curriculum_vitae_pratyush.pdf" target="_blank" rel="noopener">CV ↗</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== MOBILE DRAWER ===== -->
+  <nav class="mobile-drawer" id="mobile-drawer">
+    <a class="nav-link" data-route="home">Home</a>
+    <a class="nav-link" data-route="education">Education</a>
+    <a class="nav-link" data-route="experience">Experience</a>
+    <a class="nav-link" data-route="projects">Projects</a>
+    <a class="nav-link" data-route="extracurriculars">Extracurriculars</a>
+    <a class="nav-link" data-route="hobbies">Hobbies</a>
+    <a class="nav-link" data-route="contact">Contact</a>
+    <a class="nav-link nav-cv-link" href="assets/curriculum_vitae_pratyush.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF) ↗</a>
+  </nav>
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main" id="main-content"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>
