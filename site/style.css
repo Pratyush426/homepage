@@ -3,7 +3,7 @@
    style.css  |  Clean, professional, white background
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* ---------- Variables ---------- */
 :root {
@@ -33,7 +33,7 @@
   --header-h:      54px;
   --content-w:     100%;
   --font-body:     'Inter', sans-serif;
-  --font-head:     'Playfair Display', serif;
+  --font-head:     'Times New Roman', Times, serif;
 }
 
 /* ---------- Reset ---------- */
@@ -213,7 +213,7 @@ img { display: block; max-width: 100%; }
   font-size: 1.85rem;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   line-height: 1.15;
 }
 
