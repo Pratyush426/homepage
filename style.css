@@ -3,7 +3,7 @@
    style.css  |  Clean, professional, white background
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* ---------- Variables ---------- */
 :root {
@@ -33,7 +33,7 @@
   --header-h:      54px;
   --content-w:     100%;
   --font-body:     'Inter', sans-serif;
-  --font-head:     'Playfair Display', serif;
+  --font-head:     'Inter', sans-serif;
 }
 
 /* ---------- Reset ---------- */
@@ -213,7 +213,7 @@ img { display: block; max-width: 100%; }
   font-size: 1.85rem;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   line-height: 1.15;
 }
 
@@ -305,10 +305,10 @@ img { display: block; max-width: 100%; }
 .home-name {
   font-family: var(--font-head);
   font-size: clamp(1.9rem, 4.4vh, 2.4rem);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text);
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
   margin-bottom: 10px;
 }
 
