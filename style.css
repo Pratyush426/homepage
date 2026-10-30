@@ -7,11 +7,12 @@
 
 /* ---------- Variables ---------- */
 :root {
-  --header-bg:     #14355a; /* Distinguished Oxford Academic Blue */
-  --header-hover:  rgba(255, 255, 255, 0.10);
-  --header-active: rgba(240, 195, 101, 0.16);
-  --header-gold:   #f0c365;
-  --header-border: rgba(255, 255, 255, 0.15);
+  --header-bg:     #ffffff; /* Clean white header */
+  --header-hover:  rgba(20, 53, 90, 0.06);
+  --header-active: rgba(20, 53, 90, 0.10);
+  --header-gold:   #b8952a;
+  --header-border: #e2e8f0;
+  --header-divider: #2d9a4e; /* Green dividing line */
   
   --navy:          #14355a;
   --primary:       #14355a;
@@ -58,7 +59,8 @@ img { display: block; max-width: 100%; }
   z-index: 100;
   height: var(--header-h);
   background: var(--header-bg);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 0 var(--header-border);
+  border-bottom: 3px solid var(--header-divider);
   display: flex;
   align-items: center;
   padding: 0 48px;
@@ -70,7 +72,7 @@ img { display: block; max-width: 100%; }
   font-family: var(--font-head);
   font-size: 1.05rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--navy);
   white-space: nowrap;
   flex-shrink: 0;
   letter-spacing: 0.01em;
@@ -79,7 +81,7 @@ img { display: block; max-width: 100%; }
   margin-right: 20px;
 }
 
-.header-name span { color: var(--header-gold); }
+.header-name span { color: var(--gold); }
 
 .header-nav {
   display: flex;
@@ -98,7 +100,7 @@ img { display: block; max-width: 100%; }
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--text-muted);
   cursor: pointer;
   white-space: nowrap;
   letter-spacing: 0.01em;
@@ -108,21 +110,21 @@ img { display: block; max-width: 100%; }
 }
 
 .nav-link:hover {
-  color: #ffffff;
+  color: var(--navy);
   background: var(--header-hover);
 }
 
 .nav-link.active {
-  color: var(--header-gold);
+  color: var(--navy);
   background: var(--header-active);
-  border-color: rgba(240, 195, 101, 0.35);
+  border-color: rgba(20, 53, 90, 0.18);
   font-weight: 600;
 }
 
 /* Header CV Quick Link */
 .nav-cv-link {
-  color: var(--header-gold) !important;
-  border: 1px solid rgba(240, 195, 101, 0.45) !important;
+  color: var(--navy) !important;
+  border: 1px solid rgba(20, 53, 90, 0.30) !important;
   border-radius: 4px;
   padding: 5px 12px;
   margin-left: 4px;
@@ -133,8 +135,8 @@ img { display: block; max-width: 100%; }
   text-decoration: none;
 }
 .nav-cv-link:hover {
-  background: rgba(240, 195, 101, 0.18) !important;
-  border-color: var(--header-gold) !important;
+  background: var(--navy) !important;
+  border-color: var(--navy) !important;
   color: #ffffff !important;
 }
 
@@ -154,7 +156,7 @@ img { display: block; max-width: 100%; }
   display: block;
   width: 20px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--navy);
   border-radius: 2px;
 }
 
@@ -164,13 +166,13 @@ img { display: block; max-width: 100%; }
   position: fixed;
   top: var(--header-h);
   left: 0; right: 0;
-  background: var(--header-bg);
+  background: #ffffff;
   border-top: 1px solid var(--header-border);
   padding: 10px 16px 18px;
   z-index: 99;
   flex-direction: column;
   gap: 3px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 .mobile-drawer.open { display: flex; }
 .mobile-drawer .nav-link { width: 100%; padding: 10px 14px; font-size: 0.85rem; }
