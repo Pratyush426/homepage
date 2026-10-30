@@ -35,3 +35,4 @@ Personal academic and research portfolio website for **Pratyush Mohanty** (Under
 - **Location**: Bengaluru, Karnataka, India
 - **LinkedIn**: [linkedin.com/in/pratyushmohantymsrit](https://linkedin.com/in/pratyushmohantymsrit)
 - **GitHub**: [github.com/Pratyush426](https://github.com/Pratyush426)
+
